@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMMAC Car Rentals</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#home"><img src="images/emac_logo_transparent.png" alt="EMMAC Car Rentals"></a>
+        <span><span class="orange">EMMAC</span> Car Rentals</a></span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#contact-us">Contact Us</a>
+      </div>
+      <button class="mobile-menu" id="mobileMenu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Drive in Style with <span class="orange">EMMAC</span> Car Rentals!</h1>
+      <p>Experience luxury and comfort on every journey</p>
+      <button  class="btn">Book Now</button>
+    </div>
+  </section>
+
+  <section id="about-us" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Us</h2>
+        <p>At EMMAC Car Rentals, we believe in providing exceptional service and premium vehicles
+          at competitive prices. With years of experience in the industry, we've built our
+          reputation on reliability, transparency, and customer satisfaction.</p>
+      </div>
+      <div class="features">
+        <div class="feature-card">
+          <i data-lucide="shield"></i>
+          <h3>Quality Assured</h3>
+          <p>All our vehicles undergo rigorous maintenance checks</p>
+        </div>
+        <div class="feature-card">
+          <i data-lucide="clock"></i>
+          <h3>24/7 Support</h3>
+          <p>Round-the-clock customer service for your convenience</p>
+        </div>
+        <div class="feature-card">
+          <i data-lucide="car"></i>
+          <h3>Wide Selection</h3>
+          <p>From economy to luxury, find your perfect ride</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Comprehensive car rental solutions tailored to your needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <i data-lucide="car"></i>
+          <h3>Short & Long Term Rentals</h3>
+          <p>Flexible rental periods to suit your needs</p>
+        </div>
+        <div class="service-card">
+          <i data-lucide="user-check"></i>
+          <h3>Chauffeur Services</h3>
+          <p>Professional drivers at your service</p>
+        </div>
+        <div class="service-card">
+          <i data-lucide="map-pin"></i>
+          <h3>Airport Pickups</h3>
+          <p>Convenient airport transfer services</p>
+        </div>
+        <div class="service-card">
+          <i data-lucide="clock"></i>
+          <h3>24/7 Roadside Assistance</h3>
+          <p>Round-the-clock support for peace of mind</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fleet" class="fleet">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Fleet</h2>
+        <p>Choose from our selection of premium vehicles</p>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel" id="fleetCarousel">
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80" alt="Luxury Sedan">
+            <div class="car-details">
+              <h3>Luxury Sedan</h3>
+              <p class="price">Starting from <span>$150</span>/day</p>
+              <ul>
+                <li>4 Seats</li>
+                <li>Automatic</li>
+                <li>GPS</li>
+              </ul>
+              <button class="btn">Book Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&q=80" alt="Premium SUV">
+            <div class="car-details">
+              <h3>Premium SUV</h3>
+              <p class="price">Starting from <span>$200</span>/day</p>
+              <ul>
+                <li>7 Seats</li>
+                <li>Automatic</li>
+                <li>GPS</li>
+              </ul>
+              <button class="btn">Book Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&q=80" alt="Sports Car">
+            <div class="car-details">
+              <h3>Sports Car</h3>
+              <p class="price">Starting from <span>$300</span>/day</p>
+              <ul>
+                <li>2 Seats</li>
+                <li>Automatic</li>
+                <li>GPS</li>
+              </ul>
+              <button class="btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn prev" id="prevBtn">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" id="nextBtn">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-us" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Get in touch with our team</p>
+      </div>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="error-message"></span>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="info-item">
+            <i data-lucide="mail"></i>
+            <span>info@emmaccarrentals.com</span>
+          </div>
+          <div class="info-item">
+            <i data-lucide="phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </div>
+          <div class="info-item">
+            <i data-lucide="map-pin"></i>
+            <span>123 Car Street, Auto City, AC 12345</span>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596073366!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1645567128667!5m2!1sen!2s"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3><span class="orange">EMMAC</span> Car Rentals</h3>
+          <p>Your trusted partner for premium car rentals. Experience luxury and comfort with our extensive fleet of vehicles.</p>
+          <div class="social-links">
+            <a href="#"><i data-lucide="facebook"></i></a>
+            <a href="#"><i data-lucide="twitter"></i></a>
+            <a href="#"><i data-lucide="instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#fleet">Fleet</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>123 Car Street</li>
+            <li>Auto City, AC 12345</li>
+            <li>Phone: +1 (555) 123-4567</li>
+            <li>Email: info@emmaccarrentals.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> EMMAC Car Rentals. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
