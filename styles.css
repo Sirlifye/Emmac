@@ -101,7 +101,7 @@ body {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  height: 80vh;
   background-image: url('images/2016-Honda-Fit2.jpg');
   background-size: cover;
   background-position: center;
@@ -111,6 +111,7 @@ body {
   justify-content: center;
   text-align: center;
   color: white;
+  border-radius: 10px;
 }
 
 .hero-overlay {
@@ -302,16 +303,12 @@ body {
   background-color: white;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .form-group {
@@ -342,29 +339,17 @@ body {
 .error-message {
   color: #ef4444;
   font-size: 0.875rem;
+  margin-top: 0.25rem;
+  margin-left: 0.5rem;
+  display: none;
 }
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.info-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.info-item i {
+.contact h2 {text-align: center;
+  margin-bottom: 2rem;
   color: #f97316;
-}
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 20px}
 
-.map {
-  height: 300px;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
 
 /* Footer */
 .footer {
@@ -427,6 +412,17 @@ body {
 .footer-contact li {
   color: #9ca3af;
   margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.footer-contact li a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-contact li a:hover {
+  color: #f97316;
 }
 
 .footer-bottom {
