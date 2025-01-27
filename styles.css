@@ -140,7 +140,14 @@ body {
   padding: 5rem 0;
   background-color: #f8fafc;
 }
+.about h2{text-align: center;
+  margin-bottom: 2rem;
+  color: #f97316;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 20px
 
+}
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
@@ -148,7 +155,7 @@ body {
 
 .section-header h2 {
   font-size: 2.5rem;
-  color: #1a1a1a;
+  color: #f97316;
   margin-bottom: 1rem;
 }
 
@@ -183,6 +190,13 @@ body {
   padding: 5rem 0;
   background-color: white;
 }
+.services h2{text-align: center;
+  margin-bottom: 2rem;
+  color: #f97316;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 20px
+}
 
 .services-grid {
   display: grid;
@@ -213,6 +227,13 @@ body {
 .fleet {
   padding: 5rem 0;
   background-color: #f8fafc;
+}
+.fleet h2{text-align: center;
+  margin-bottom: 2rem;
+  color: #f97316;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 20px
 }
 
 .carousel-container {
