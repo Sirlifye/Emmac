@@ -97,11 +97,14 @@ body {
   color: white;
   cursor: pointer;
 }
+.mobile-menu.active {
+  display: block;
+}
 
 
 /* Hero Section */
 .hero {
-  height: 80vh;
+  height: 70vh;
   background-image: url('images/2016-Honda-Fit2.jpg');
   background-size: cover;
   background-position: center;
@@ -184,6 +187,9 @@ body {
   height: 3rem;
   margin-bottom: 1rem;
 }
+.lucide-shield{
+  color: #f97316;
+}
 
 /* Services Section */
 .services {
@@ -221,6 +227,21 @@ body {
   width: 3rem;
   height: 3rem;
   margin-bottom: 1rem;
+}
+.lucide-car{
+  color: #f97316;
+}
+.lucide-calendar{
+  color: #f97316;
+}
+.lucide-user-check{
+  color: #f97316;
+}
+.lucide-map-pin{
+  color: #f97316;
+}
+.lucide-clock{
+  color: #f97316;
 }
 
 /* Fleet Section */
@@ -486,4 +507,33 @@ body {
   .footer-content {
     grid-template-columns: 1fr;
   }
+}
+
+/* Facebook Section */
+.facebook {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.facebook iframe {
+  max-width: 80%;
+  height: 1200px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.facebook iframe:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.facebook h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #f97316;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 20px
 }

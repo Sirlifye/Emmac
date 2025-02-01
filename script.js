@@ -14,7 +14,12 @@ mobileMenu.addEventListener('click', () => {
     icon.setAttribute('data-lucide', 'menu');
   }
   lucide.createIcons();
-});
+  mobileMenu.blur();
+
+  });
+
+
+
 
 // Fleet Carousel
 const carousel = document.getElementById('fleetCarousel');
@@ -85,3 +90,23 @@ contactForm.addEventListener('submit', (e) => {
 
 // Update copyright year
 document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+// Book now function for car rental
+function bookNow() {
+  const fleetCarousel = document.getElementById('fleetCarousel');
+  fleetCarousel.scrollIntoView({ behavior: 'smooth' });
+
+
+  // Pre-fill message with generic car rental booking inquiry
+  const messageField = document.getElementById('message');
+  if (messageField) {
+      messageField.value = `I am interested in booking a car. Please provide more details about availability, pricing, and terms.`;
+  }
+
+  // Scroll to the contact form
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+      contactForm.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+

@@ -17,8 +17,8 @@
       <div class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#about-us">About Us</a>
-        <a href="#services">Services</a>
         <a href="#fleet">Fleet</a>
+        <a href="#services">Services</a>
         <a href="#contact-us">Contact Us</a>
       </div>
       <button class="mobile-menu" id="mobileMenu">
@@ -32,7 +32,7 @@
     <div class="hero-content">
       <h1>Drive in Style with <span class="orange">EMMAC</span> Car Rentals!</h1>
       <p>Experience luxury and comfort on every journey</p>
-      <button  class="btn">Book Now</button>
+      <button  class="btn" onclick="bookNow()">Book Now</button>
     </div>
   </section>
 
@@ -40,9 +40,9 @@
     <div class="container">
       <div class="section-header">
         <h2>About Us</h2>
-        <p>At EMMAC Car Rentals, we believe in providing exceptional service and premium vehicles
+        <p><i>At EMMAC Car Rentals, we believe in providing exceptional service and premium vehicles
           at competitive prices. With years of experience in the industry, we've built our
-          reputation on reliability, transparency, and customer satisfaction.</p>
+          reputation on reliability, transparency, and customer satisfaction.</i></p>
       </div>
       <div class="features">
         <div class="feature-card">
@@ -68,7 +68,7 @@
     <div class="container">
       <div class="section-header">
         <h2>Our Fleet</h2>
-        <p>Choose from our selection of premium vehicles</p>
+        <p><i>Choose from our selection of premium vehicles</i></p>
       </div>
       <div class="carousel-container">
         <div class="carousel" id="fleetCarousel">
@@ -82,7 +82,7 @@
                 <li>Automatic</li>
                 <li>Self Driving</li>
               </ul>
-              <button class="btn">Book Now</button>
+              <button class="btn" onclick="bookNow()">Book Now</button>
             </div>
           </div>
           <div class="carousel-item">
@@ -95,7 +95,7 @@
                 <li>Automatic</li>
                 <li>Self Driving</li>
               </ul>
-              <button class="btn">Book Now</button>
+              <button class="btn" onclick="bookNow()">Book Now</button>
             </div>
           </div>
           <div class="carousel-item">
@@ -108,7 +108,7 @@
                 <li>Automatic</li>
                 <li>Self Driving</li>
               </ul>
-              <button class="btn">Book Now</button>
+              <button class="btn" onclick="bookNow()">Book Now</button>
             </div>
           </div>
         </div>
@@ -121,12 +121,24 @@
       </div>
     </div>
   </section>
+  
+  <section id="facebook" class="facebook">
+    <div class="container">
+      <h1>Get the latest updates</h1>
+      <p><i>Follow us on Facebook and stay connected</i></p><br><br>
+    </div>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Femmaccarrentals&tabs=timeline%2C%20events&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=979106430519714"
+     width="500" height="1200"
+     style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</section>
+
 
   <section id="services" class="services">
     <div class="container">
       <div class="section-header">
         <h2>Our Services</h2>
-        <p>Comprehensive car rental solutions tailored to your needs</p>
+        <p><i>Comprehensive car rental solutions tailored to your needs</i></p>
       </div>
       <div class="services-grid">
         <div class="service-card">
@@ -153,15 +165,15 @@
     </div>
   </section>
 
-
   <section id="contact-us" class="contact">
     <div class="container">
       <div class="section-header">
         <h2>Contact Us</h2>
-        <p>Get in touch with our team</p>
+        <p><i>Get in touch with our team</i></p>
       </div>
       <div class="contact-grid">
-        <form id="contactForm" class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
+          <input type="hidden" name="access_key" value="">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
@@ -182,6 +194,9 @@
             <textarea id="message" name="message" rows="4" required></textarea>
             <span class="error-message"></span>
           </div>
+          <div class="h-captcha" data-captcha="true"></div>
+          <!-- Honeypot field to prevent spam -->
+          <input type="checkbox" name="botcheck" style="display: none !important;">
           <button type="submit" class="btn">Send Message</button>
         </form>
       </div>
