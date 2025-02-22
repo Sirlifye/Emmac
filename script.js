@@ -100,7 +100,7 @@ function bookNow() {
   // Pre-fill message with generic car rental booking inquiry
   const messageField = document.getElementById('message');
   if (messageField) {
-      messageField.value = `I am interested in booking a car. Please provide more details about availability, pricing, and terms.`;
+      messageField.value = `I am interested in booking a car. Please provide more details about availability, quotation, and terms.`;
   }
 
   // Scroll to the contact form
