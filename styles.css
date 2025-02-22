@@ -274,9 +274,11 @@ body {
 
 .carousel-item img {
   width: 100%;
-  height: 300px;
+  height: auto;
   object-fit: cover;
   border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .car-details {
@@ -516,8 +518,8 @@ body {
 }
 
 .facebook iframe {
-  max-width: 80%;
-  height: 800px;
+  max-width: 100%;
+  height: 1200px;
   border-radius: 20px;
   overflow: hidden;
   border: none;
@@ -536,4 +538,17 @@ body {
   background-color: #1a1a1a;
   padding: 1rem;
   border-radius: 20px
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .facebook iframe {
+      width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+      width: 100% !important;
+  }
 }
