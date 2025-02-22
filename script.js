@@ -32,12 +32,12 @@ function updateCarousel() {
 }
 
 prevBtn.addEventListener('click', () => {
-  currentIndex = currentIndex === 0 ? 10 : currentIndex - 1;
+  currentIndex = currentIndex === 0 ? 9 : currentIndex - 1;
   updateCarousel();
 });
 
 nextBtn.addEventListener('click', () => {
-  currentIndex = currentIndex === 10 ? 0 : currentIndex + 1;
+  currentIndex = currentIndex === 9 ? 0 : currentIndex + 1;
   updateCarousel();
 });
 
