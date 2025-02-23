@@ -515,12 +515,13 @@ body {
 .facebook {
   padding: 5rem 0;
   text-align: center;
+  
 }
 
 .facebook iframe {
   max-width: 100%;
   height: 1200px;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   border: none;
   transition: all 0.3s ease;
@@ -541,7 +542,7 @@ body {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .facebook iframe {
       width: 100% !important;
   }
